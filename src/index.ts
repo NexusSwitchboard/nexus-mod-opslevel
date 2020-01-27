@@ -64,14 +64,14 @@ class OpslevelModule extends NexusModule {
     public loadConnections(config: NexusModuleConfig, _router: Router): ConnectionRequestDefinition[] {
         return [
             {
-                name: "@nexus-switchboard/nexus-conn-opslevel",
+                name: "nexus-conn-opslevel",
                 config: {
                     apiToken: config.OPSLEVEL_TOKEN,
                     graphQlEndpoint: config.OPSLEVEL_GQL_ENDPOINT
                 }
             },
             {
-                name: "@nexus-switchboard/nexus-conn-confluence",
+                name: "nexus-conn-confluence",
                 config: {
                     host: config.CONFLUENCE_HOST,
                     username: config.CONFLUENCE_USERNAME,
@@ -82,11 +82,11 @@ class OpslevelModule extends NexusModule {
     }
 
     public getConfluence(): ConfluenceConnection {
-        return this.getActiveConnection("@nexus-switchboard/nexus-conn-confluence") as ConfluenceConnection;
+        return this.getActiveConnection("nexus-conn-confluence") as ConfluenceConnection;
     }
 
     public getOpslevel(): OpsLevelConnection {
-        return this.getActiveConnection("@nexus-switchboard/nexus-conn-opslevel") as OpsLevelConnection;
+        return this.getActiveConnection("nexus-conn-opslevel") as OpsLevelConnection;
     }
 }
 

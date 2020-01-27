@@ -1,5 +1,5 @@
 {
-  "name": "@nexus-switcbhoard/nexus-mod-opslevel",
+  "name": "@nexus-switchboard/nexus-mod-opslevel",
   "version": "0.0.1",
   "description": "Provides various opslevel integration functionality.",
   "main": "dist/index.js",
