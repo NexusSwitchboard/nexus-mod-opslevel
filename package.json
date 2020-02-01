@@ -1,7 +1,9 @@
 {
   "name": "@nexus-switchboard/nexus-mod-opslevel",
   "version": "0.0.2",
-  "keywords": ["nexus-module"],
+  "keywords": [
+    "nexus-module"
+  ],
   "description": "Provides various opslevel integration functionality.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,9 +22,9 @@
     "assert": "^2.0.0",
     "debug": "^4.1.1",
     "ts-confluence-client": "0.0.19",
-    "@nexus-switchboard/nexus-conn-confluence": "^0.0.1",
-    "@nexus-switchboard/nexus-conn-opslevel": "^0.0.1",
-    "@nexus-switchboard/nexus-extend": "^0.4.4"
+    "@nexus-switchboard/nexus-conn-confluence": "^0.0",
+    "@nexus-switchboard/nexus-conn-opslevel": "^0.0",
+    "@nexus-switchboard/nexus-extend": "^0.4"
   },
   "devDependencies": {
     "@types/node": "^12.7.5",
